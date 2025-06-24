@@ -1,3 +1,114 @@
-body{
-    background-color: aqua;
+:root {
+  --color-primary-blue: #007bff;
+  --color-primary-green: #28a745;
+  --color-primary-purple: #6f42c1;
+  --color-background: #fafafa;
+  --color-text: #000000;
+  --font-poppins: "Poppins", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-poppins);
+}
+
+.montserrat {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+}
+
+.preamble-text {
+  line-height: 2.4;
+}
+
+.form-check-input {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0;
+}
+
+.form-check-label {
+  margin-left: 0;
+  padding-left: 0;
+  font-weight: 600;
+}
+
+.form-check-input-blue {
+  border: 2px solid var(--color-primary-blue);
+}
+
+.form-check-input-blue:checked {
+  background-color: var(--color-primary-blue);
+  border-color: var(--color-primary-blue);
+}
+
+.form-check-input-blue:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.form-check-label[for="startWithT"] {
+  color: var(--color-primary-blue);
+}
+
+#resultStartT {
+  font-weight: 600;
+  color: var(--color-primary-blue);
+}
+
+.starts-with-t {
+  border-bottom: 2px solid var(--color-primary-blue);
+}
+
+.form-check-input-green {
+  border: 2px solid var(--color-primary-green);
+}
+
+.form-check-input-green:checked {
+  background-color: var(--color-primary-green);
+  border-color: var(--color-primary-green);
+}
+
+.form-check-input-green:focus {
+  box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+}
+
+.form-check-label[for="endWithE"] {
+  color: var(--color-primary-green);
+}
+
+#resultEndE {
+  font-weight: 600;
+  color: var(--color-primary-green);
+}
+
+.ends-with-e {
+  border-top: 2px solid var(--color-primary-green);
+}
+
+.form-check-input-purple {
+  border: 2px solid var(--color-primary-purple);
+}
+
+.form-check-input-purple:checked {
+  background-color: var(--color-primary-purple);
+  border-color: var(--color-primary-purple);
+}
+
+.form-check-input-purple:focus {
+  box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.25);
+}
+
+.form-check-label[for="startTEndE"] {
+  color: var(--color-primary-purple);
+}
+
+#resultStartTEndE {
+  font-weight: 600;
+  color: var(--color-primary-purple);
+}
+
+.starts-t-ends-e {
+  color: var(--color-primary-purple);
 }
